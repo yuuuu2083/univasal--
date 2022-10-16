@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+
+.register {
+    background-image: url("../../../public/images/note-ash.png");
+    background-repeat: repeat;
+    background-repeat: initial;
+    height: 100vh;
+}
+
+.register-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.register-right {
+    width: 650px;
+    height: 500px;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    border: 1px solid;
+}
+
+.newRegister {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px;
+}
+
+.username,
+.email,
+.pass,
+.pass2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.register-input {
+    font-size: 18px;
+    width: 370px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.register-input:focus {
+    outline: none;
+}
+
+.signup {
+    font-size: 16px;
+    width: 175px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    background-color: #718bbc;
+    color: #fff;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.register-login {
+    font-size: 16px;
+    text-align: center;
+    width: 175px;
+    border: none;
+    background-color: inherit;
+    color: #000;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+}

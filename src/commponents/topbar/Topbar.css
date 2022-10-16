@@ -1,0 +1,193 @@
+.topbar {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 84px 60px 0 60px;
+    position: relative;
+}
+
+.topbar-register {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.topbar-login {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+.jibun {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 74px;
+    right: 54px;
+}
+
+
+.topbar-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.share {
+    width: 450px;
+    height: 260px;
+}
+
+.share-inner {
+    height: 260px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.share-submit {
+    width: 90px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.share-submit:hover {
+    box-shadow: 1px 1px 4px #848484;
+    transition: 0.3s;
+}
+
+.errorMessage {
+    font-size: 12px;
+    color: red;
+}
+
+.share-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profole-img {
+    width: 70px;
+    height: 70px;
+}
+
+.share-profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.share-right {
+    width: 260px;
+    height: 240px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-title {
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+}
+
+.share-input-title {
+    border-radius: 50px;
+    font-size: 12px;
+    width: 250px;
+    height: 26px;
+    padding-left: 10px;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+
+.share-input-content {
+    width: 250px;
+    border-radius: 10px;
+    font-size: 12px;
+    height: 128px;
+    padding-left: 10px;
+    border: none;
+}
+
+.submit {
+    margin: 10px auto auto auto;
+    width: 90px;
+    cursor: pointer;
+}
+
+
+.mainTitle {
+    font-size: 2.5rem;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1050px)  {
+    .share {
+        width: 400px;
+    }
+
+    .share-inner {
+        height: 200px;
+    }
+
+
+    .topbar-inner {
+    height: 400px;
+    margin-top: 30px;
+    flex-direction: column;
+    }
+
+    .share-input-content {
+        height: 78px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .share {
+        max-width: 320px;
+    }
+
+    .share-right {
+        width: 210px;
+    }
+
+    .share-submit {
+        width: 70px;
+        font-size: 12px;
+        }
+
+    .share-profile-img {
+        width: 50px;
+        height: 50px;
+    }
+    .share-input-title {
+        width: 200px;
+    }
+
+    .share-input-content {
+        width: 200px;
+    } 
+
+    .mainTitle {
+        font-size: 1.3rem;
+    }
+
+
+}

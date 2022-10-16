@@ -1,0 +1,15 @@
+.timeline {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 84px 60px 80px 60px;
+}
+
+
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53px;
+    justify-content: center;
+
+}

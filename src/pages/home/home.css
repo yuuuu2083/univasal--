@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+
+.home-container {
+    background-image: url("../../../public/images/note-ash.png");
+    background-repeat: repeat;
+    background-repeat: initial;
+    height: 100%;
+}

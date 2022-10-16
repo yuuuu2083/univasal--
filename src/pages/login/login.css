@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+}
+
+.login {
+    background-image: url("../../../public/images/note-ash.png");
+    background-repeat: repeat;
+    background-repeat: initial;
+    height: 100vh;
+}
+
+.login-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login-right {
+    width: 650px;
+    height: 370px;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    border: 1px solid;
+}
+
+.newlogin {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px;
+}
+
+.email,
+.pass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.login-input {
+    font-size: 18px;
+    width: 370px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+.login-login {
+    font-size: 16px;
+    width: 175px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid rgb(86, 86, 86);
+    background-color: #649562;
+    color: #fff;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.createAcount {
+    font-size: 16px;
+    width: 175px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid rgb(86, 86, 86);
+    background-color: #545fc1;
+    color: #fff;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+}
