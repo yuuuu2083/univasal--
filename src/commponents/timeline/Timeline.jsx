@@ -13,7 +13,7 @@ export default function Timeline() {
     
     useEffect(() => {
         const fetchPosts = async () => {
-            const responce = await axios.get("/post/");
+            const responce = await axios.get("api/p/");
             setPosts(responce.data.sort((post1, post2) => {
                 return new Date(post2.createdAt) - new Date(post1.createdAt);
             }));
