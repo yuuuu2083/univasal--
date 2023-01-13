@@ -19,9 +19,9 @@ export default function Profile() {
     useEffect(() => {//自分のユーザー情報の取得
         const state = async () => {
             const [responce, responce2, responce3 ] = await Promise.all([
-                axios.get(`/user/${User}`),
-                axios.get(`/post/profile?userId=${User}`),
-                axios.get(`/user/friend/${User}`),
+                axios.get(`api/user/${User}`),
+                axios.get(`api/post/profile?userId=${User}`),
+                axios.get(`api/user/friend/${User}`),
             ])
             setHost(responce.data);
             setPost(responce2.data);

@@ -13,7 +13,7 @@ export default function Post({ post }) {//投稿内容
     useEffect(() => {
         try {
             const fetch = async () => {
-                const users = await axios.get(`/user/${post.userId}`);
+                const users = await axios.get(`api/user/${post.userId}`);
                 setUser(users.data);
             }
             fetch();
@@ -21,12 +21,11 @@ export default function Post({ post }) {//投稿内容
             console.log(err);
         }
     },[post.userId]);
-    console.log(user)
 
     const handleClickDelete = async (e) => {
         e.preventDefault();
         try {
-            await axios.delete(`/post/${post._id}`, { userId: User })
+            await axios.delete(`api/post/${post._id}`, { userId: User })
             window.location.reload();
         } catch (err) {
             console.log(err);

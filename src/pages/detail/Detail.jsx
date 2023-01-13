@@ -24,7 +24,7 @@ export default function Detail() {
     const handleClickAdd = async (e) => {
         e.preventDefault();
         try {
-            const follow = await axios.put(`/user/${detail.userId}/follow`, { userId: User });
+            const follow = await axios.put(`api/user/${detail.userId}/follow`, { userId: User });
             if(follow.data === "友達を追加した") {
                 Add.textContent = "友達を追加した"
             } else {
@@ -38,7 +38,7 @@ export default function Detail() {
     const handleClickLike = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`/post/like/${detail._id}`, { userId: User });
+            await axios.put(`api/post/like/${detail._id}`, { userId: User });
         } catch (err) {
             console.log(err);
         }
@@ -50,7 +50,7 @@ export default function Detail() {
 
     useEffect(() => {
         const fetch = async () => {
-            const details = await axios.get(`/post/detail?userId=${i}`)//投稿のIDから投稿の全ての情報を取得(投稿した人のIDも含まれる)
+            const details = await axios.get(`api/post/detail?userId=${i}`)//投稿のIDから投稿の全ての情報を取得(投稿した人のIDも含まれる)
             setDetail(details.data);
 
         }

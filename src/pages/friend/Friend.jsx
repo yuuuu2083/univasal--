@@ -16,8 +16,8 @@ export default function Friend() {
     useEffect(() => {
         try {
             const fetch = async () => {
-                const detail = await axios.get(`/post/profile?userId=${i}`);
-                const user = await axios.get(`/user/${i}`);
+                const detail = await axios.get(`api/post/profile?userId=${i}`);
+                const user = await axios.get(`api/user/${i}`);
                 setDetail(detail.data);
                 setUser(user.data)
             }

@@ -15,8 +15,6 @@ export default function Topbar() {
 
     const { user: context } = useContext(Mycontext);
 
-    console.log(context)
-
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -33,7 +31,7 @@ export default function Topbar() {
             data.append("file", file);
             newSubmit.img = fileName;
             try {
-                await axios.post("/upload/", data)
+                await axios.post("api/upload/", data)
             } catch (err) {
                 console.log(err);
             }
@@ -43,7 +41,7 @@ export default function Topbar() {
 
 
         try {
-            await axios.post("/post/", newSubmit);
+            await axios.post("api/post/", newSubmit);
             window.location.reload();
         } catch (err) {
             error.current.innerText = "画像を投稿してください";

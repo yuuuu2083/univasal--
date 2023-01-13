@@ -18,7 +18,7 @@ export default function Login() {
         }
 
         try {
-            await axios.post("auth/login", data);
+            await axios.post("api/auth/login", data);
         } catch (err) {
             console.log(err);
         }
